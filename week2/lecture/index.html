@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Web Dev 1 - Week 2</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Week 2</h1>
+					<h3>Desperately clawing at the sides of the interactive rabbit hole in a futile attempt to escape, wondering what you've gotten yourself into.</h3>
+				</section>
+
+
+				<section>
+					<h2>Homework!</h2>
+					<p>How was it?</p>
+				</section>
+
+				<section>
+					<h2>URLs &amp; Paths Again</h2>
+					<p>http://www.site.com/giraffes/index.html</p>
+					<p>Scheme / Server Name / Path / File Name</p>
+					<img src="images/filestructure.png" alt="File Structure Diagram" title="Diagram of file structure.">
+				</section>
+
+				<section>
+					<h2>Paths</h2>
+					<p>Two types of paths, absolute and relative.</p>
+					<br><br>
+					<p>Absolute Paths: </p>
+					<ul>
+						<li>http://www.creativecircus.edu</li>
+						<li>http://www.creativecircus.edu/programs</li>
+					</ul>
+					<br><br>
+					<p>Relative Paths:</p>
+					<ul>
+						<li>animals/</li>
+						<li>animals/giraffes/giraffe1.html</li>
+						<li>../penguins/terrence.html</li>
+					</ul>
+					<br>
+				</section>
+
+				<section>
+					<h2>Paths Continued</h2>
+					<ul>
+						<li>Slashes mean "go into a folder named..."</li>
+						<li>Dot Dot Slash ( ../ ) means "go one level up from where you currently are"</li>
+						<li>If a file is not specified, the browser will look for an index.html.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>File Names</h2>
+					<ul>
+						<li>Don't use spaces or special characters, e.g. * $ % # </li>
+						<li>File names are CASE SENSITIVE</li>
+						<li>Don't start files with a number</li>
+						<li>Separate words with either an underscore or with camelCase when possible</li>
+					</ul>
+					<br><br>
+					<p>"Camel Case" is the term used when running words together. Typically these start with lowercase letters, but afterwards each new word begins with an uppercase letter.</p>
+					<br><br>
+					<ul>
+						<li>camelCaseFileName.html</li>
+						<li>camelsAreDesertQuadropeds.html</li>
+						<li>ridiculousFileName.html</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h2>Semantic HTML5 Markup</h2>
+					<p>&lt;header&gt;</p>
+					<p>&lt;nav&gt;</p>
+					<p>&lt;article&gt;</p>
+					<p>&lt;section&gt;</p>
+					<p>&lt;aside&gt;</p>
+					<p>&lt;footer&gt;</p>
+				</section>
+
+				<section>
+					<h2>Other Basic Tags</h2>
+					<p>Headings</p>
+					<p>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</p><br><br>
+					<p>Paragraphs</p>
+					<p>&lt;p&gt;</p><br><br>
+					<p>Lists</p>
+					<p>&lt;ul&gt; &lt;ol&gt; &lt;dl&gt;</p><br><br>
+					<p>Links</p>
+					<p>&lt;a&gt;</p><br><br>
+				</section>
+
+				<section>
+					<h2>Using Special Characters</h2>
+					<p>Certain "reserved" characters cannot be simply typed and displayed in a page.</p>
+					<p>Must use the Decimal code or the Entity code to display</p>
+					<br><br>
+					<table width="100%">
+						<tr>
+							<th>Symbol</th>
+							<th>Decimal</th>
+							<th>Entity</th>
+						</tr>
+						<tr>
+							<td>&copy;</td>
+							<td>&amp;#169;</td>
+							<td>&amp;copy;</td>
+						</tr>
+						<tr>
+							<td>&amp;</td>
+							<td>&amp;#038;</td>
+							<td>&amp;amp;</td>
+						</tr>
+						<tr>
+							<td>&ldquo;</td>
+							<td>&amp;8220;</td>
+							<td>&amp;ldquo;</td>
+						</tr>
+						<tr>
+							<td>&rdquo;</td>
+							<td>&amp;8221;</td>
+							<td>&amp;rdquo;</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Images</h2>
+					<p>Web File Formats</p>
+					<br><br>
+					<ul>
+						<li>.jpg or .jpeg: Raster, lossy, no transparency</li>
+						<li>.gif: raster, low quality, simple transparency</li>
+						<li>.png: raster, lossless, transparency</li>
+						<li>.svg: vector, resolution independent</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>&lt;img&gt; tag</h2>
+					<p>Required Attributes:</p>
+					<ul>
+						<li>src=""</li>
+						<li>alt=""</li>
+					</ul>
+					<br><br>
+					<p>Optional Attributes:</p>
+					<ul>
+						<li>title=""</li>
+						<li>width=""</li>
+						<li>height=""</li>
+					</ul>
+					<br><br>
+					<p>Remember these are self-closing tags</p>
+				</section>
+
+				<section>
+					<h2>Photoshop Demo</h2>
+					<h3>Or How to use "the claw"</h3>
+					<p>CMD + OPT + SHIFT + S</p>
+				</section>
+
+				<section>
+					<h2>Forms</h2>
+					<p>Standard inputs which allow you to collect data from users. These include:</p>
+					<ul>
+						<li>Text fields</li>
+						<li>Checkboxes</li>
+						<li>Radio Buttons</li>
+						<li>Drop Down Lists</li>
+						<li>Submit Buttons</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Forms Continued</h2>
+					<p>Begin with a &lt;form&gt; tag</p>
+					<p>Uses the Action, Method, and ID attributes</p>
+					<br><br>
+					<p>Contain elements like &lt;input&gt; &lt;select&gt; &lt;button&gt; &lt;label&gt;</p>
+				</section>
+
+				<section>
+					<h2>Form example</h2>
+					<img src="images/forms.png">
+				</section>
+
+				<section>
+					<h2>Tables</h2>
+					<p>Organize tabular information in a table. Elements include:</p>
+					<ul>
+						<li>&lt;table&gt; : Defines a table. Contains other elements.</li>
+						<li>&lt;th&gt; : Defines a header cell</li>
+						<li>&lt;tr&gt; : Defines a row in a table</li>
+						<li>&lt;td&gt; : Defines a cell in a table</li>
+						<li>&lt;caption&gt; : Defines the table caption</li>
+						<li>&lt;thead&gt; : Groups the header content in a table</li>
+						<li>&lt;tbody&gt; : Groups the body content in a table</li>
+						<li>&lt;tfoot&gt; : Groups the footer content in a table</li>
+					</ul>
+					<p>attributes include rowspan and colspan</p>
+				</section>
+
+				<section>
+					<h2>Homework: Reading</h2>
+					<p>Read chapters 5 - 7 in the book</p>
+				</section>
+
+				<section>
+					<h2>Homework: Coding</h2>
+					<p>See assignment under week 2 on Github.com for instructions.</p>
+					<p>You will be telling me your life story.</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
