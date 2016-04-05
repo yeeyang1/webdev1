@@ -1,18 +1,18 @@
 # Homework Instructions - Week 1
 Congrats! So you've made it thru the first lecture and you're ready to begin.
 
-To review the [lecture](../lecture/index.html).
+To review the [lecture](../lecture/).
 
 ## Directions and Homework Requirements
-+ Create a file inside the `homework` folder named index.html
-+ In the index.html file, set up the doctype, head, and body.
-+ Create a title inside the head: title the page, Homework 1
-+ Copy all the content from the questions.txt file and paste it into the body between the `<body>` and `</body>` tags.
++ Create a file inside the `week1/homework` folder named `index.html`
++ In the `index.html` file, set up the doctype, head, and body.
++ Create a title inside the `head`: title the page, Homework 1 - by [Your Name]
++ Copy all the content from the 'Questions and Answer' section below and paste it into the body between the `<body>` and `</body>` tags.
 + Markup the contents with the following guidelines:
     + Make "Homework 1" your main *heading*
-    + Questions will all be *subheadings* (see below)
+    + Questions will all be *subheadings*
     + Answers will be *paragraphs*
-+ Upload the week1 folder to your Circuslabs web server (using FTP)
++ Upload the `week1/` folder to your Circuslabs web server (using FTP)
 + Upload (*drag and drop*) and commit (*write a title and message*) the **entire** folder from your Desktop (or folder) to your Github Repository `WebDev1` root and submit a Pull Request
 
 ## Questions to Answer
